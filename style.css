@@ -9,7 +9,7 @@
 
 /* Gobal */
 
-.primary-bg{
+.bg-primary{
     background-color: rgba(255, 144, 14, 0.1);
 }
 
@@ -29,11 +29,22 @@
     color: #727272;
 }
 
+.primary-btn{
+    font-size: 1.25rem;
+    text-align: center;
+    color: white;
+    background-color: #FF900E;
+    border: none;
+    padding: 21px 24px 20px 25px;
+    border-radius: 8px;
+}
+
 
 /* Header */
 
 .navbar{
     justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -51,4 +62,30 @@
 .navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+
+/* Banner */
+
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-image{
+    width: 100%;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 756px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
 }
