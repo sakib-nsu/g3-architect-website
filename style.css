@@ -123,8 +123,51 @@ main > section{
 
 .features-description{
     margin-bottom: 32px;
+}
+
+/* Second features */
+
+.features{
+    gap: 140px;
+}
+
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.feature-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.feature-architect img{
+    width: 100%;
 
 }
+
+#experience-badge{
+    padding: 46px 42px;
+    margin-top: -110px;
+    margin-left: -100px;
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+
 
 
 /* Some Facts */
@@ -179,15 +222,32 @@ main > section{
     filter: grayscale(100%);
 }
 
+/* Footer */
+
+footer{
+    max-width: 1440px;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    text-align: center;
+    padding: 40px 410px;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+
+
+
+
 
 /* =========================================================== */
 
-/* Responsive */
+/* Responsive for mobile device */
 
 @media screen and (max-width: 756px) {
     .navbar, 
     .nav-links, 
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .team-img-container, 
@@ -209,10 +269,24 @@ main > section{
     .our-features{
         margin-left: 20px;
     }
+
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    footer{
+        background-color: #FFF4E7;
+        border-radius: 8px;
+        text-align: center;
+        padding: 20px 20px;
+    }
 }
 
+/* Responsive for medium device */
+
 @media screen and (min-width: 756px) and (max-width: 992px){
-    .teams{
+    .teams, 
+    .features{
         flex-direction: column;
     }
     .our-features{
@@ -223,6 +297,17 @@ main > section{
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
+    }
+
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    footer{
+        background-color: #FFF4E7;
+        border-radius: 8px;
+        text-align: center;
+        padding: 20px 20px;
     }
 
 }
